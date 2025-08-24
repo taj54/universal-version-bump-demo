@@ -24,7 +24,9 @@ on:
         options:
           - .
           - node-demo
-          
+          - python-demo
+
+
 
 jobs:
   bump:

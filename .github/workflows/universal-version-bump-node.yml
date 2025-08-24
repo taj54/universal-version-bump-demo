@@ -24,7 +24,7 @@ on:
         options:
           - .
           - node-demo
-          - python-demo
+          - python-toml-demo
 
 
 

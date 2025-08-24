@@ -17,9 +17,14 @@ on:
           - minor
           - major
       target_path:
-        description: 'Directory containing package.json'
+        description: 'Directory to bump version in'
         required: true
         default: 'node-demo'
+        type: choice
+        options:
+          - .
+          - node-demo
+          
 
 jobs:
   bump:

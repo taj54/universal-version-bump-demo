@@ -1,7 +1,7 @@
 {
   "name": "universal-version-bump-demo/php-demo",
   "description": "A basic PHP demo for universal-version-bump.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "project",
   "license": "MIT",
   "require": {

@@ -16,6 +16,10 @@ on:
           - patch
           - minor
           - major
+      target_path:
+        description: 'Directory containing package.json'
+        required: true
+        default: 'node-demo'
 
 jobs:
   bump:
@@ -27,6 +31,8 @@ jobs:
           fetch-depth: 0
 
       - name: Universal Version Bump
-        uses: taj54/universal-version-bump@v0.8.0
+        uses: taj54/universal-version-bump@v0.8.1
         with:
           release_type: ${{ inputs.release_type }}
+          git_tag: false
+          target_path: ${{ inputs.target_path }}

@@ -48,6 +48,10 @@ jobs:
           NEW_VERSION=$(pnpm version ${{ inputs.release_type }} --no-git-tag-version | awk '{print $NF}')
           echo "new_version=$NEW_VERSION" >> $GITHUB_ENV
 
+      - name: Create new branch
+        run: |
+          git checkout -b release/${{ env.new_version }}
+
       - name: Commit & Push changes
         run: |
           git config user.name "github-actions[bot]"

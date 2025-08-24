@@ -25,6 +25,8 @@ on:
           - .
           - node-demo
           - python-toml-demo
+          - python-setup-demo
+          - php-composer-demo
 
 
 

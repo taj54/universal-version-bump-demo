@@ -12,7 +12,11 @@ on:
           - patch
           - minor
           - major
-
+      target_path:
+        description: 'Directory to bump version for'
+        required: true
+        default: 'node-demo'
+     
 jobs:
   bump-version:
     runs-on: ubuntu-latest

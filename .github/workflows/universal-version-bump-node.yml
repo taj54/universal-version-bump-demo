@@ -27,9 +27,11 @@ on:
           - python-toml-demo
           - python-setup-demo
           - php-composer-demo
-          - php-version-php-democonfig.php
+          - php-version-php-demo
           - php-config-demo
-          
+          - docker-demo
+          - rust-demo
+
 
 
 jobs:

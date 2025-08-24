@@ -31,8 +31,10 @@ jobs:
           fetch-depth: 0
 
       - name: Universal Version Bump
-        uses: taj54/universal-version-bump@v0.8.1
+        uses: taj54/universal-version-bump@v0.8.2
         with:
           release_type: ${{ inputs.release_type }}
           git_tag: false
           target_path: ${{ inputs.target_path }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

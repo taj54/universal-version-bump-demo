@@ -1,4 +1,4 @@
-name: Version Bump
+name: Node Version Bump
 
 on:
   workflow_dispatch:

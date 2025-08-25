@@ -25,6 +25,12 @@ on:
           - .
           - node-demo
           - python-toml-demo
+          - python-setup-demo
+          - php-composer-demo
+          - php-version-php-demo
+          - php-config-demo
+          - docker-demo
+          - rust-demo
 
 
 
@@ -38,7 +44,7 @@ jobs:
           fetch-depth: 0
 
       - name: Universal Version Bump
-        uses: taj54/universal-version-bump@v0.8.2
+        uses: taj54/universal-version-bump@v0.8.7
         with:
           release_type: ${{ inputs.release_type }}
           git_tag: false

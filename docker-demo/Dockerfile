@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-LABEL maintainer="Taj <taj@test.com>"
+LABEL maintainer=1.0.1
 LABEL version="1.0.0"
 
 WORKDIR /app

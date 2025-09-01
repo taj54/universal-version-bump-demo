@@ -1,4 +1,4 @@
-name: custom Version Bump
+name: Custom Version Bump
 
 permissions:
   contents: write
@@ -29,7 +29,7 @@ jobs:
           fetch-depth: 0
 
       - name: Universal Version Bump
-        uses: taj54/universal-version-bump@v0.13.1
+        uses: taj54/universal-version-bump@v0.13.0
         with:
           release_type: ${{ inputs.release_type }}
           git_tag: false

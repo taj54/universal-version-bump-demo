@@ -38,6 +38,7 @@ jobs:
             [
               { "path": "package.json", "variable": "version" },
               { "path": "node-demo/package.json", "variable": "version" }
+               {"path":"php-config-demo/config.php", "variable": "version"}
             ]
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -38,8 +38,12 @@ jobs:
             [
               { "path": "package.json", "variable": "version" },
               { "path": "php-class-demo/AppSettings.php", "variable": "appVersion" },
-              { "path": "php-config-demo/config.php", "variable": "version" }
-
+              { "path": "php-composer-demo/composer.json", "variable": "version" },
+              { "path": "php-config-demo/config.php", "variable": "version" },
+              { "path": "php-version-php-demo/config.php", "variable": "NUMBER" },
+              { "path": "python-setup-demo/setup.py", "variable": "version" },
+              { "path": "python-toml-demo/pyproject.toml", "variable": "version" },
+              { "path": "rust-toml-demo/cargo.toml", "variable": "version" }
             ]
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

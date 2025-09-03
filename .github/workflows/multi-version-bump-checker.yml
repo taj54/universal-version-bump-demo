@@ -42,7 +42,7 @@ jobs:
               { "path": "php-config-demo/config.php", "variable": "version" },
               { "path": "python-setup-demo/setup.py", "variable": "version" },
               { "path": "python-toml-demo/pyproject.toml", "variable": "version" },
-              { "path": "rust-toml-demo/cargo.toml", "variable": "version" }
+              { "path": "rust-toml-demo/Cargo.toml", "variable": "version" }
             ]
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

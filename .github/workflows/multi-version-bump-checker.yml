@@ -29,7 +29,7 @@ jobs:
           fetch-depth: 0
 
       - name: Universal Version Bump
-        uses: taj54/universal-version-bump@v0.13.0
+        uses: taj54/universal-version-bump@v0.13.2
         with:
           release_type: ${{ inputs.release_type }}
           git_tag: false
@@ -37,13 +37,7 @@ jobs:
           bump_targets: |
             [
               { "path": "package.json", "variable": "version" },
-              { "path": "node-demo/package.json", "variable": "version" },
-              { "path": "php-composer-demo/composer.json", "variable": "version" },
-              { "path": "python-setup-demo/setup.py", "variable": "version" },
-              { "path": "php-config-demo/config.php", "variable": "version" },
-              { "path": "php-version-php-demo/version.php", "variable": "NUMBER" },
-              { "path": "python-toml-demo/pyproject.toml", "variable": "version" },
-              { "path": "rust-demo/Cargo.toml", "variable": "version" }
+              { "path": "php-class-demo/AppSettings.php", "variable": "$appVersion" }
 
             ]
         env:
